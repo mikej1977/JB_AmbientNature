@@ -29,3 +29,5 @@ function JB_AmbientNature.getDayOfYear()
     end
     return day
 end
+
+return JB_AmbientNature

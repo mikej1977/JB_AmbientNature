@@ -28,7 +28,7 @@ local function debugSquareFlags(key)
     if key == Keyboard.KEY_0 then
         local sq = JB_AmbientNature.getRandomSquare()
         if not sq then
-            print("No square under mouse.")
+            print("No square ouch")
             return
         end
 

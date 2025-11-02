@@ -1,6 +1,6 @@
-JB_AmbientNature      = JB_AmbientNature or {}
+JB_AmbientNature = JB_AmbientNature or {}
 local hoursUntilFrost = 6
-local hoursUntilMelt  = 336 
+local hoursUntilMelt = 336
 
 local function getMD()
     return ModData.getOrCreate("JB_AmbientNature")
@@ -10,31 +10,9 @@ function JB_AmbientNature.getFrost()
     return getMD().Frost
 end
 
-function JB_AmbientNature.getFrostCounter()
-    return getMD().frostCounter
-end
-
-function JB_AmbientNature.getMeltingHours()
-    return getMD().meltingHours
-end
-
 function JB_AmbientNature.setFrost(b)
     local md = getMD()
     md.Frost = b
-    ModData.add("JB_AmbientNature", md)
-    if isServer() then ModData.transmit("JB_AmbientNature") end
-end
-
-function JB_AmbientNature.setFrostCounter(b)
-    local md = getMD()
-    md.frostCounter = b
-    ModData.add("JB_AmbientNature", md)
-    if isServer() then ModData.transmit("JB_AmbientNature") end
-end
-
-function JB_AmbientNature.setMeltingHours(b)
-    local md = getMD()
-    md.meltingHours = b
     ModData.add("JB_AmbientNature", md)
     if isServer() then ModData.transmit("JB_AmbientNature") end
 end
@@ -48,11 +26,11 @@ Events.OnInitGlobalModData.Add(function()
 end)
 
 local function updateFrost()
-    local cm            = getClimateManager()
-    local temp          = cm:getTemperature()
-    local wind          = cm:getWindspeedKph()
-    local season        = cm:getSeasonId()
-    local gmd           = getMD()
+    local cm     = getClimateManager()
+    local temp   = cm:getTemperature()
+    local wind   = cm:getWindspeedKph()
+    local season = cm:getSeasonId()
+    local gmd    = getMD()
 
     local frostTemp = (wind >= 19 and 2) or (wind > 6 and -2) or 0
 
@@ -78,6 +56,7 @@ local function updateFrost()
     end
 
     ModData.add("JB_AmbientNature", gmd)
+
     if isServer() then
         ModData.transmit("JB_AmbientNature")
     end

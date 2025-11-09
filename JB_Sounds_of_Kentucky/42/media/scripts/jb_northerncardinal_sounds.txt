@@ -3,48 +3,48 @@ module JB_AmbientNature
     sound northerncardinal_song_1
     {
         category = jb_ambient_nature, loop = false, is3D = true,
-        clip { file = media/sound/northerncardinal_song_1.ogg, distanceMax = 10, volume = 5, }
+        clip { file = media/sound/northerncardinal/northerncardinal_song_1.ogg, distanceMax = 10, volume = 1, }
     }
 
     sound northerncardinal_song_2
     {
         category = jb_ambient_nature, loop = false, is3D = true,
-        clip { file = media/sound/northerncardinal_song_2.ogg, distanceMax = 10, volume = 5, }
+        clip { file = media/sound/northerncardinal/northerncardinal_song_2.ogg, distanceMax = 10, volume = 1, }
     }
 
     sound northerncardinal_song_3
     {
         category = jb_ambient_nature, loop = false, is3D = true,
-        clip { file = media/sound/northerncardinal_song_3.ogg, distanceMax = 10, volume = 5, }
+        clip { file = media/sound/northerncardinal/northerncardinal_song_3.ogg, distanceMax = 10, volume = 1, }
     }
 
     sound northerncardinal_song_4
     {
         category = jb_ambient_nature, loop = false, is3D = true,
-        clip { file = media/sound/northerncardinal_song_4.ogg, distanceMax = 10, volume = 5, }
+        clip { file = media/sound/northerncardinal/northerncardinal_song_4.ogg, distanceMax = 10, volume = 1, }
     }
 
     sound northerncardinal_mating_1
     {
         category = jb_ambient_nature, loop = false, is3D = true,
-        clip { file = media/sound/northerncardinal_mating_1.ogg, distanceMax = 10, volume = 5, }
+        clip { file = media/sound/northerncardinal/northerncardinal_mating_1.ogg, distanceMax = 10, volume = 1, }
     }
 
     sound northerncardinal_mating_2
     {
         category = jb_ambient_nature, loop = false, is3D = true,
-        clip { file = media/sound/northerncardinal_mating_2.ogg, distanceMax = 10, volume = 5, }
+        clip { file = media/sound/northerncardinal/northerncardinal_mating_2.ogg, distanceMax = 10, volume = 1, }
     }
 
     sound northerncardinal_mating_3
     {
         category = jb_ambient_nature, loop = false, is3D = true,
-        clip { file = media/sound/northerncardinal_mating_3.ogg, distanceMax = 10, volume = 5, }
+        clip { file = media/sound/northerncardinal/northerncardinal_mating_3.ogg, distanceMax = 10, volume = 1, }
     }
 
     sound northerncardinal_alarm_1
     {
         category = jb_ambient_nature, loop = false, is3D = true,
-    clip { file = media/sound/northerncardinal_alarm_1.ogg, distanceMax = 10, volume = 5, }
+    clip { file = media/sound/northerncardinal/northerncardinal_alarm_1.ogg, distanceMax = 10, volume = 1, }
     }
 }
